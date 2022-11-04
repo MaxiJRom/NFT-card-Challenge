@@ -1,0 +1,166 @@
+/* =====General styles====== */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Colors ====== */
+
+:root {
+    font-size: 16px;
+
+    --clr-font-cyan: hsl(178, 100%, 50%);
+    --clr-font-blue: hsl(215, 51%, 70%);
+
+    --clr-main-bg-blue: hsl(217, 54%, 11%);
+    --clr-card-bg-blue: hsl(216, 50%, 16%);
+    --clr-line-blue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+}
+
+
+/* ===== Typography ====== */
+
+.cyan {
+    color: var(--clr-font-cyan);
+}
+
+.light-blue {
+    color: var(--clr-font-blue);
+}
+
+.white {
+    color: var(--white);
+}
+
+.regular {
+    font-family: Outfit, serif;
+    font-weight: 300;
+}
+
+.semi-bold {
+    font-family: Outfit, serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.bold {
+    font-family: Outfit, serif;
+    font-weight: 600;
+}
+
+/* ===== Layout ====== */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__info__eth {
+    display: flex;
+    align-items: center;
+}
+
+.card__info__days {
+    display: flex;
+    align-items: center;
+}
+
+.card__footer {
+    display: flex;
+    align-items: center;
+}
+
+/* ===== Components styles ====== */
+
+body {
+    background-color: var(--clr-main-bg-blue);
+}
+
+.card {
+    background-color: var(--clr-card-bg-blue);
+    width: 310px;
+    height: 525px;
+    padding: 1.2em;
+    border-radius: 1em;
+
+}
+
+
+.card__image-container {
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+.card__image {
+    width: 100%;
+    height: 100%;
+}
+
+.card__name {
+    font-size: 1.25rem;
+}
+
+.card__description {
+    font-size: 1rem;
+}
+
+
+.card__info__eth {
+    font-size: 0.9rem;
+}
+
+
+.card__info__days{
+    font-size: 0.9rem;
+}
+
+.card__info p{
+    margin:0 0.2em;
+}
+
+
+.card__footer {
+    font-size: 0.9rem;
+}
+
+.card__footer>img {
+    width: 2em;
+    margin: 0 1em 0 0;
+    border:1px solid var(--white);
+    border-radius: 50%;
+}
+
+
+.card__footer a{
+    text-decoration: none;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom:1em;
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    
+}
